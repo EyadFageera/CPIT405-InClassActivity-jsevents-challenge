@@ -80,6 +80,7 @@ function start() {
             if (wonCount >= 3 && neverWonCount >= 3) {
                 end();
             }
+            team_in.value = '';
         }
     }
 );
