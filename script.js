@@ -100,6 +100,7 @@ function addTeamToTable(team, table) {
 
 function end() {
     clearInterval(timer);
+    teamInput.disabled = true;
     statusDisplay.textContent = `Quiz over. You entered ${wonCount} teams that have won and ${neverWonCount} teams that have never won.`;
     timerDisplay.textContent = 'Time left: 0s';
 }
